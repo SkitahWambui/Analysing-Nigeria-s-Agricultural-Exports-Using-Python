@@ -1,0 +1,175 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "0919e74a",
+   "metadata": {
+    "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
+    "execution": {
+     "iopub.execute_input": "2024-06-06T09:26:48.126094Z",
+     "iopub.status.busy": "2024-06-06T09:26:48.125649Z",
+     "iopub.status.idle": "2024-06-06T09:26:50.301836Z",
+     "shell.execute_reply": "2024-06-06T09:26:50.300706Z"
+    },
+    "papermill": {
+     "duration": 2.182878,
+     "end_time": "2024-06-06T09:26:50.304513",
+     "exception": false,
+     "start_time": "2024-06-06T09:26:48.121635",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# import libraries\n",
+    "\n",
+    "import numpy as np \n",
+    "import pandas as pd \n",
+    "import seaborn as sns\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "# import dataset\n",
+    "ex = pd.read_csv('/kaggle/input/nigerian-agricultural-exports/nigeria_agricultural_exports.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "df589de8",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-06T09:26:50.310717Z",
+     "iopub.status.busy": "2024-06-06T09:26:50.310333Z",
+     "iopub.status.idle": "2024-06-06T09:26:50.315376Z",
+     "shell.execute_reply": "2024-06-06T09:26:50.314209Z"
+    },
+    "papermill": {
+     "duration": 0.010584,
+     "end_time": "2024-06-06T09:26:50.317474",
+     "exception": false,
+     "start_time": "2024-06-06T09:26:50.306890",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# convert to dataframe\n",
+    "ex = pd.DataFrame(ex)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "249e0868",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-06T09:26:50.323249Z",
+     "iopub.status.busy": "2024-06-06T09:26:50.322838Z",
+     "iopub.status.idle": "2024-06-06T09:26:50.330532Z",
+     "shell.execute_reply": "2024-06-06T09:26:50.329491Z"
+    },
+    "papermill": {
+     "duration": 0.01303,
+     "end_time": "2024-06-06T09:26:50.332648",
+     "exception": false,
+     "start_time": "2024-06-06T09:26:50.319618",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(1000, 10)"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# check the shape of the dataframe\n",
+    "ex.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "e97da9e7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-06T09:26:50.338513Z",
+     "iopub.status.busy": "2024-06-06T09:26:50.338148Z",
+     "iopub.status.idle": "2024-06-06T09:26:50.342874Z",
+     "shell.execute_reply": "2024-06-06T09:26:50.341750Z"
+    },
+    "papermill": {
+     "duration": 0.010024,
+     "end_time": "2024-06-06T09:26:50.344945",
+     "exception": false,
+     "start_time": "2024-06-06T09:26:50.334921",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# check for nulls \n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [
+    {
+     "datasetId": 5160798,
+     "sourceId": 8621302,
+     "sourceType": "datasetVersion"
+    }
+   ],
+   "dockerImageVersionId": 30732,
+   "isGpuEnabled": false,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 5.57488,
+   "end_time": "2024-06-06T09:26:50.967692",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-06-06T09:26:45.392812",
+   "version": "2.5.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
